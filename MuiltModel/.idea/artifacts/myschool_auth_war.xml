@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="myschool_auth:war">
+    <output-path>$PROJECT_DIR$/../MuiltModel/myschool_auth/target</output-path>
+    <root id="archive" name="myschool_auth.war">
+      <element id="artifact" artifact-name="myschool_auth:war exploded" />
+    </root>
+  </artifact>
+</component>

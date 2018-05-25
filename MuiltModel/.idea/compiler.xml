@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="myschool_auth" />
+        <module name="myschool_bean" />
+        <module name="myschool_dao" />
+        <module name="myschool_search" />
+        <module name="myschool_service" />
+        <module name="myschool_trade" />
+        <module name="myschool_web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MuiltModel" target="1.5" />
+      <module name="myschool_auth" target="1.5" />
+      <module name="myschool_bean" target="1.5" />
+      <module name="myschool_dao" target="1.5" />
+      <module name="myschool_search" target="1.5" />
+      <module name="myschool_service" target="1.5" />
+      <module name="myschool_trade" target="1.5" />
+      <module name="myschool_web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

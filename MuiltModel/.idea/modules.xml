@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MuiltModel.iml" filepath="$PROJECT_DIR$/MuiltModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MuiltModel/myschool_auth/myschool_auth.iml" filepath="$PROJECT_DIR$/../MuiltModel/myschool_auth/myschool_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MuiltModel/myschool_bean/myschool_bean.iml" filepath="$PROJECT_DIR$/../MuiltModel/myschool_bean/myschool_bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MuiltModel/myschool_dao/myschool_dao.iml" filepath="$PROJECT_DIR$/../MuiltModel/myschool_dao/myschool_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MuiltModel/myschool_search/myschool_search.iml" filepath="$PROJECT_DIR$/../MuiltModel/myschool_search/myschool_search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MuiltModel/myschool_service/myschool_service.iml" filepath="$PROJECT_DIR$/../MuiltModel/myschool_service/myschool_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MuiltModel/myschool_trade/myschool_trade.iml" filepath="$PROJECT_DIR$/../MuiltModel/myschool_trade/myschool_trade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MuiltModel/myschool_web/myschool_web.iml" filepath="$PROJECT_DIR$/../MuiltModel/myschool_web/myschool_web.iml" />
+    </modules>
+  </component>
+</project>

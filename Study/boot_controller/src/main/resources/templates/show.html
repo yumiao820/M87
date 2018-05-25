@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/static/js/layui-v2.3.0-rc1/layui/css/layui.css}"/>
+    <script rel="script" th:href="@{/static/js/jquery-3.2.1.js}"></script>
+    <script rel="script" th:href="@{/static/js/layui-v2.3.0-rc1/layui/layui.js}"></script>
+
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        .container {
+            width: 80%;
+            margin: 0px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>修改用户信息</h1>
+    <table>
+        <form class="layui-form" th:action="@{/user/upd} " th:method="post">
+            <input type="hidden" th:name="id" th:value="${list.id}">
+            <div class="layui-form-item">
+                <label class="layui-form-label">userCode</label>
+                <div class="layui-input-block">
+                    <input type="text" required lay-verify="required"
+                           placeholder="请输入用户code"
+                           th:value="${list.userCode}" th:name="userCode"
+                           autocomplete="off" class="layui-input"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">名称</label>
+                <div class="layui-input-block">
+                    <input type="text" placeholder="请输入用户名称" required lay-verify="required"
+                           th:value="${list.userName}" th:name="userName"
+                           autocomplete="off" class="layui-input"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">生日</label>
+                <div class="layui-input-inline">
+                    <input type="text" placeholder="请输入日期" required lay-verify="required"
+                           th:value="${#dates.format(list.birthday,'yyyy-MM-dd')}"
+                           th:name="birthday"
+                           autocomplete="off" class="layui-input data"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn layui-btn-normal" type="submit">
+                        提交
+                    </button>
+                    <button class="layui-btn layui-btn-danger" type="reset">
+                        重置
+                    </button>
+                </div>
+            </div>
+        </form>
+    </table>
+
+</div>
+<script>
+    layui.use('laydate', function () {
+        var laydate = layui.laydate;
+        //执行一个laydate实例
+        laydate.render({
+            elem: '.data' //指定元素
+        });
+    });
+
+</script>
+</body>
+</html>

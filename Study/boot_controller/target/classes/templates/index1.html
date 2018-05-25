@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>超市用户管理系统</title>
+    <link rel="stylesheet" th:href="@{/static/css/Main.css}"/>
+    <link rel="stylesheet" th:href="@{/static/js/layui-v2.3.0-rc1/layui/css/layui.css}"/>
+    <script rel="script" th:href="@{/static/js/jquery-3.2.1.js}"></script>
+    <script rel="script" th:href="@{/static/js/layui-v2.3.0-rc1/layui/layui.js}"></script>
+    <script rel="script" th:href="@{/static/js/Main.js}"></script>
+</head>
+<body>
+<div class="container">
+    <div th:if="${msg ne null}" th:text="${msg}"></div>
+    <h1>员工管理系统</h1>
+    <p><a th:href="@{/user/toAdd}">新增</a></p>
+    <table class="layui-table">
+        <tr>
+            <th>id</th>
+            <th>userCode</th>
+            <th>用户名</th>
+            <th>生日</th>
+            <th>操作</th>
+        </tr>
+        <tr th:each="user:${lists}">
+            <td th:text="${user.id}">1</td>
+            <td th:text="${user.userCode}">xianxin</td>
+            <td th:text="${user.userName}">贤心</td>
+            <td th:text="${#dates.format(user.birthday,'yyyy-MM-dd')}"></td>
+            <td>
+                <a th:href="@{/user/find/{id} (id=${user.id})}" class="update">修改</a>
+                &nbsp;
+                <a class="delete" th:href="@{/user/del/{id} (id=${user.id})}">删除</a>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

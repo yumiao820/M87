@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cn.boot.muiltmode.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in com.cn.boot.muiltmode.AppTest

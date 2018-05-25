@@ -1,0 +1,9 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    width: 80%;
+    border: 1px solid #f40;
+    margin: 0px auto;
+}

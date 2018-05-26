@@ -1,6 +1,5 @@
 package com.cn.boot.muiltmode.controller;
 
-import com.cn.boot.muiltmode.dto.ResultDto;
 import com.cn.boot.muiltmode.entity.User;
 import com.cn.boot.muiltmode.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
